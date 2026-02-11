@@ -405,6 +405,36 @@ img {
     transform: translateY(-1px);
 }
 
+.btn-social {
+    background: #f1f5f9;
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.1);
+}
+
+.btn-social:hover {
+    background: #e2e8f0;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+}
+
+.btn-linkedin {
+    color: #0a66c2;
+}
+
+.btn-linkedin svg {
+    fill: #0a66c2;
+}
+
+.btn-linkedin:hover {
+    background: #e8f0f8;
+    color: #0a66c2;
+}
+
+.btn-linkedin:hover svg {
+    fill: #0a66c2;
+}
+
 .hero-scroll {
     position: absolute;
     bottom: clamp(1rem, 4vw, 2rem);
@@ -493,8 +523,9 @@ img {
 
 .about-photo {
     width: 100%;
-    aspect-ratio: 1;
+    aspect-ratio: 3 / 4;
     object-fit: cover;
+    object-position: center;
     border-radius: var(--radius-lg);
     border: 1px solid var(--border);
     box-shadow: var(--shadow);
